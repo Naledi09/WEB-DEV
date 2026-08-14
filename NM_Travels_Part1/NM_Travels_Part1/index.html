@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NM Travels | Reliable Travel</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="index.html">NM <span>Travels</span></a>
+            <button class="menu" aria-label="Open navigation">☰</button>
+            <nav>
+                <a class="active" href="index.html">Home</a>
+                <a href="routes.html">Routes & Schedule</a>
+                <a href="booking.html">Book a Seat</a>
+                <a href="charter.html">Private Charter</a>
+                <a href="fleet.html">Fleet</a>
+                <a href="about.html">About & Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <!-- IMAGE PLACEHOLDER: Add a licensed shuttle/airport-transfer image here. -->
+             <img src="images/WhatsApp Image 2026-08-14 at 19.26.07.jpeg" alt="Shuttle vehicle" class="placeholder">
+            <div class="container hero-content">
+                <p class="eyebrow">Reliable travel. Clear schedules. Straightforward pricing.</p>
+                <h1>Get where you need to be, on time.</h1>
+                <p>NM Travels provides airport transfers, intercity shuttle services and private group transport for travellers, commuters, businesses and events.</p>
+                <a class="btn primary" href="booking.html">Book a Seat</a> 
+                <a class="btn secondary" href="routes.html">View Routes</a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <p class="eyebrow">Plan your trip</p>
+                <h2>Search a route</h2>
+                <form class="search" id="routeSearch">
+                    <select id="from" required>
+                        <option value="">From</option>
+                        <option>Polokwane</option>
+                        <option>Johannesburg</option>
+                        <option>OR Tambo International Airport</option>
+                        <option>Polokwane International Airport</option>
+                    </select>
+                    <select id="to" required>
+                        <option value="">To</option>
+                        <option>Polokwane</option>
+                        <option>Johannesburg</option>
+                        <option>OR Tambo International Airport</option>
+                        <option>Polokwane International Airport</option>
+                    </select>
+                    <input id="date" type="date" required>
+                    <button class="btn primary" type="submit">Search</button>
+                </form>
+                <div id="searchResult" class="notice hidden"></div>
+            </div>
+        </section>
+        <section class="section alt">
+            <div class="container">
+                <h2>Travel built around your schedule</h2>
+                <div class="stats">
+                    <div><b>3</b><span>Vehicles</span></div>
+                    <div><b>7–14</b><span>Passenger capacity</span></div>
+                    <div><b>Daily</b><span>Shuttle services</span></div>
+                    <div><b>2024</b><span>Established</span></div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container cards">
+                <article>
+                    <h3>Airport Transfers</h3>
+                    <p>Scheduled trips to and from airports.</p>
+                </article>
+                <article>
+                    <h3>Intercity Shuttle</h3>
+                    <p>Planned departures between key locations.</p>
+                </article>
+                <article>
+                    <h3>Private Rides</h3>
+                    <p>Transport for teams, weddings and events.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <strong>NM Travels</strong>
+            <p>WhatsApp: 072 000 0000 | bookings@nmtravels.co.za</p>
+        </div> 
+        <small>© 2026 NM Travels. Fictional student project.</small>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html> 

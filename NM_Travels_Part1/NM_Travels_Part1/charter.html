@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Private Charter | NM Travels</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container nav">
+                <a class="logo" href="index.html">NM <span>Travels</span></a>
+                <button class="menu" aria-label="Open navigation">☰</button>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="routes.html">Routes & Schedule</a>
+                    <a href="booking.html">Book a Seat</a>
+                    <a class="active" href="charter.html">Private Charter</a>
+                    <a href="fleet.html">Fleet</a>
+                    <a href="about.html">About & Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <div class="container">
+                    <p class="eyebrow">Group transport</p>
+                    <h1>Private Charter</h1>
+                    <p>Request a quote for events, teams, corporate travel and group transfers.</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container two">
+                    <form class="panel form" id="charterForm">
+                        <label>Contact person
+                            <input id="cname" required>
+                        </label>
+                        <label>Company / Organisation
+                            <input id="company">
+                        </label>
+                        <label>Email
+                            <input id="cemail" type="email" required>
+                        </label>
+                        <label>Phone
+                            <input id="cphone" type="tel" required>
+                        </label>
+                        <label>Group size
+                            <input id="group" type="number" min="1" required>
+                        </label>
+                        <label>Event / travel date
+                            <input id="eventDate" type="date" required>
+                        </label>
+                        <label>Route
+                            <input id="route" placeholder="Example: Polokwane to Johannesburg" required>
+                        </label>
+                        <label>Event type
+                            <select id="eventType" required>
+                                <option value="">Select</option>
+                                <option>Corporate event</option>
+                                <option>Wedding</option>
+                                <option>School / team trip</option>
+                                <option>Airport transfer</option>
+                                <option>Conference</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                        <label class="full">Additional requirements
+                            <textarea id="details" rows="5"></textarea>
+                        </label>
+                        <button class="btn primary" type="submit">Send Charter Enquiry</button>
+                    </form>
+
+                    <aside class="panel">
+                        
+                         <img src="images/WhatsApp Image 2026-08-14 at 19.26.08.jpeg" alt="Group transport vehicle" class="placeholder">
+                        <div class="placeholder">Group transport image</div>
+                        <h2>Suitable for groups</h2>
+                        <p>Vehicle planning can be based on group size, route, timing and event requirements.</p>
+                    </aside>
+
+                </div>
+
+                "<div class="container">"
+                    "<div id="charterResult" class="notice" hidden></div>"
+                "</div>"
+
+            </section>
+
+        </main>
+
+        "<footer>"
+            "<div class="container">"
+                "<strong>NM Travels</strong>"
+                "<p>WhatsApp: 072 000 0000 | bookings@nmtravels.co.za</p>"
+            "</div>"
+            "<small>© 2026 NM Travels. Fictional student project.</small>"
+        "</footer>"
+
+        "<script src="js/script.js"></script>"
+    "</body>"
+"</html>"

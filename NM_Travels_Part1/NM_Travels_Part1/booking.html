@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book a Seat | NM Travels</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container nav">
+                <a class="logo" href="index.html">NM <span>Travels</span></a>
+                <button class="menu" aria-label="Open navigation">☰</button>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="routes.html">Routes & Schedule</a>
+                    <a class="active" href="booking.html">Book a Seat</a>
+                    <a href="charter.html">Private Charter</a>
+                    <a href="fleet.html">Fleet</a>
+                    <a href="about.html">About & Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <div class="container">
+                    <p class="eyebrow">Reserve your seat</p>
+                    <h1>Book a Seat</h1>
+                    <p>Submit a booking request without phoning the office.</p>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container two">
+                    <form class="panel form" id="bookingForm">
+                        <label>Full name
+                            <input id="name" required>
+                        </label>
+                        <label>Phone / WhatsApp
+                            <input id="phone" type="tel" required>
+                        </label>
+                        <label>Email
+                            <input id="email" type="email" required>
+                        </label>
+                        <label>Travel date
+                            <input id="travelDate" type="date" required>
+                        </label>
+                        <label>Pickup
+                            <select id="pickup" required>
+                                <option value="">Select</option>
+                                <option>Polokwane</option>
+                                <option>Johannesburg</option>
+                                <option>OR Tambo International Airport</option>
+                                <option>Polokwane International Airport</option>
+                            </select>
+                        </label>
+                        <label>Drop-off
+                            <select id="dropoff" required>
+                                <option value="">Select</option>
+                                <option>Polokwane</option>
+                                <option>Johannesburg</option>
+                                <option>OR Tambo International Airport</option>
+                                <option>Polokwane International Airport</option>
+                            </select>
+                        </label>
+                        <label>Seats
+                            <input id="seats" type="number" min="1" max="14" value="1" required>
+                        </label>
+                        <label>Special request
+                            <input id="request" type="text">
+                        </label>
+                        <button class="btn primary" type="submit">Submit Booking</button>
+                    </form>
+                    <aside class="panel">
+                        <h2>Before you book</h2>
+                        <p>Check the route and departure time first. The confirmation process is simulated for this academic project.</p>
+                    </aside>
+                </div>
+                <div class="container">
+                    <div id="bookingResult" class="notice" hidden></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <strong>NM Travels</strong>
+                <p>WhatsApp: 072 000 0000 | bookings@nmtravels.co.za</p>
+            </div>
+            <small>© 2026 NM Travels. Fictional student project.</small>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
