@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Shuttle Seat Online | NM Travels Polokwane</title>
+  <meta name="description" content="Request a seat on an NM Travels airport or intercity shuttle. Choose your pickup, drop-off, travel date and number of seats and see an estimated fare before you submit.">
+  <meta name="theme-color" content="#2b2b2b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NM Travels">
+  <meta property="og:title" content="Book a Shuttle Seat Online | NM Travels">
+  <meta property="og:description" content="Request a seat on an airport or intercity shuttle from Polokwane and see an estimated fare.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="NM Travels home page">NM <span>Travels</span></a>
+      <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes &amp; Schedule</a>
+        <a class="active" href="booking.html" aria-current="page">Book a Seat</a>
+        <a href="charter.html">Private Charter</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="about.html">About &amp; Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="banner">
+      <div class="container">
+        <p class="eyebrow">Reserve your seat</p>
+        <h1>Book a Shuttle Seat</h1>
+        <p>Send a booking request without phoning the office.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="booking-heading">
+      <div class="container two">
+        <form class="panel form" id="bookingForm">
+          <h2 id="booking-heading" class="full form-title">Your trip details</h2>
+          <label>Full name<input id="name" name="name" autocomplete="name" required></label>
+          <label>Phone / WhatsApp<input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+ ]{10,15}" title="Enter a phone number such as 072 000 0000" required></label>
+          <label>Email<input id="email" name="email" type="email" autocomplete="email" required></label>
+          <label>Travel date<input id="travelDate" name="travelDate" type="date" required></label>
+          <label>Pickup
+            <select id="pickup" name="pickup" required>
+              <option value="">Select</option>
+              <option>Polokwane</option>
+              <option>Johannesburg</option>
+              <option>OR Tambo International Airport</option>
+              <option>Polokwane International Airport</option>
+            </select>
+          </label>
+          <label>Drop-off
+            <select id="dropoff" name="dropoff" required>
+              <option value="">Select</option>
+              <option>Polokwane</option>
+              <option>Johannesburg</option>
+              <option>OR Tambo International Airport</option>
+              <option>Polokwane International Airport</option>
+            </select>
+          </label>
+          <label>Seats<input id="seats" name="seats" type="number" min="1" max="14" value="1" required></label>
+          <label>Special request<input id="request" name="request" placeholder="Example: extra luggage"></label>
+          <div id="fareEstimate" class="fare full" aria-live="polite">Choose a pickup and drop-off to see an estimated fare.</div>
+          <button class="btn primary" type="submit">Submit booking request</button>
+          <p class="form-note full">Demo form: your details stay in your browser and are not sent or stored.</p>
+        </form>
+        <aside class="panel">
+          <h2>Before you book</h2>
+          <p>Check the departure time for your route first. The confirmation process is simulated for this academic project.</p>
+          <p><a class="text-link" href="routes.html">Check shuttle departure times and fares</a></p>
+          <p>Travelling as a group of 8 or more, or need a route that isn't on the timetable?</p>
+          <p><a class="text-link" href="charter.html">Request a private group charter quote</a></p>
+        </aside>
+      </div>
+      <div class="container">
+        <div id="bookingResult" class="notice" aria-live="polite" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>NM Travels</strong>
+        <p>Airport transfers and intercity shuttles between Polokwane, Johannesburg and OR Tambo International Airport.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-title">Explore</p>
+        <a href="routes.html">Routes &amp; Schedule</a>
+        <a href="booking.html">Book a Seat</a>
+        <a href="charter.html">Private Charter</a>
+        <a href="fleet.html">Our Fleet</a>
+        <a href="about.html">About &amp; Contact</a>
+      </nav>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Call or WhatsApp: <a href="tel:+27720000000">072 000 0000</a></p>
+        <p>Email: <a href="mailto:bookings@nmtravels.co.za">bookings@nmtravels.co.za</a></p>
+        <p>Office: Mon–Fri 07:00–17:00</p>
+      </div>
+    </div>
+    <small>© <span data-year>2026</span> NM Travels. Fictional student project — routes, prices and contact details are examples.</small>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

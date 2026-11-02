@@ -1,0 +1,7 @@
+# NM Travels – crawler instructions
+# All public pages may be crawled. robots.txt is public, so it never lists private content.
+User-agent: *
+Allow: /
+
+# TODO after publishing: replace the placeholder address with the live site URL.
+Sitemap: https://YOUR-GITHUB-USERNAME.github.io/NM_Travels_Part2/sitemap.xml
