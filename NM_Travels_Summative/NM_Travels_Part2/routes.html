@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polokwane to Johannesburg Shuttle Routes &amp; Schedule | NM Travels</title>
+  <meta name="description" content="Departure times, stops and fares for NM Travels shuttles between Polokwane, Johannesburg, OR Tambo International Airport and Polokwane International Airport.">
+  <meta name="theme-color" content="#2b2b2b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NM Travels">
+  <meta property="og:title" content="Shuttle Routes &amp; Schedule | NM Travels">
+  <meta property="og:description" content="Departure times, stops and fares for shuttles between Polokwane, Johannesburg and OR Tambo International Airport.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="NM Travels home page">NM <span>Travels</span></a>
+      <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a class="active" href="routes.html" aria-current="page">Routes &amp; Schedule</a>
+        <a href="booking.html">Book a Seat</a>
+        <a href="charter.html">Private Charter</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="about.html">About &amp; Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="banner">
+      <div class="container">
+        <p class="eyebrow">Plan ahead</p>
+        <h1>Shuttle Routes &amp; Schedule</h1>
+        <p>Departure times, stops and fares for our airport, intercity and commuter shuttles.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="timetable-heading">
+      <div class="container panel">
+        <h2 id="timetable-heading">Weekday timetable</h2>
+        <div class="filter-bar">
+          <label for="filter">Filter routes by type</label>
+          <select id="filter">
+            <option value="all">All routes</option>
+            <option value="airport">Airport transfers</option>
+            <option value="intercity">Intercity shuttles</option>
+            <option value="commuter">Commuter routes</option>
+          </select>
+          <p id="filterCount" class="note" aria-live="polite">Showing all 5 routes</p>
+        </div>
+        <div class="table-wrap">
+          <table id="routeTable">
+            <caption class="visually-hidden">NM Travels shuttle routes with departure, arrival, stops and fare per seat</caption>
+            <thead>
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Route</th>
+                <th scope="col">Departure</th>
+                <th scope="col">Arrival</th>
+                <th scope="col">Stops</th>
+                <th scope="col">Fare per seat</th>
+                <th scope="col"><span class="visually-hidden">Booking</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-type="airport">
+                <td>Airport</td>
+                <td>Polokwane → Polokwane International Airport</td>
+                <td>05:30</td>
+                <td>06:15</td>
+                <td>Selected pickup points</td>
+                <td>R120</td>
+                <td><a class="text-link" href="booking.html?from=Polokwane&amp;to=Polokwane%20International%20Airport">Book this route</a></td>
+              </tr>
+              <tr data-type="airport">
+                <td>Airport</td>
+                <td>Polokwane → OR Tambo International Airport</td>
+                <td>06:00</td>
+                <td>09:00</td>
+                <td>Pre-arranged</td>
+                <td>R450</td>
+                <td><a class="text-link" href="booking.html?from=Polokwane&amp;to=OR%20Tambo%20International%20Airport">Book this route</a></td>
+              </tr>
+              <tr data-type="intercity">
+                <td>Intercity</td>
+                <td>Polokwane → Johannesburg</td>
+                <td>07:00</td>
+                <td>10:00</td>
+                <td>Selected pickup points</td>
+                <td>R420</td>
+                <td><a class="text-link" href="booking.html?from=Polokwane&amp;to=Johannesburg">Book this route</a></td>
+              </tr>
+              <tr data-type="intercity">
+                <td>Intercity</td>
+                <td>Johannesburg → Polokwane</td>
+                <td>16:30</td>
+                <td>19:30</td>
+                <td>Selected pickup points</td>
+                <td>R420</td>
+                <td><a class="text-link" href="booking.html?from=Johannesburg&amp;to=Polokwane">Book this route</a></td>
+              </tr>
+              <tr data-type="commuter">
+                <td>Commuter</td>
+                <td>Polokwane Suburbs → CBD</td>
+                <td>06:30</td>
+                <td>07:15</td>
+                <td>Multiple stops</td>
+                <td>R60</td>
+                <td><a class="text-link" href="about.html#contact">Ask about commuter seats</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">*Routes, prices and times are fictional examples for this academic project.</p>
+      </div>
+    </section>
+
+    <section class="section alt cta">
+      <div class="container two">
+        <div>
+          <h2>Travelling with a larger group?</h2>
+          <p>If your group needs its own vehicle or a route that is not on the timetable, we can quote for a private trip.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn outline" href="charter.html">Request a private group charter quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>NM Travels</strong>
+        <p>Airport transfers and intercity shuttles between Polokwane, Johannesburg and OR Tambo International Airport.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-title">Explore</p>
+        <a href="routes.html">Routes &amp; Schedule</a>
+        <a href="booking.html">Book a Seat</a>
+        <a href="charter.html">Private Charter</a>
+        <a href="fleet.html">Our Fleet</a>
+        <a href="about.html">About &amp; Contact</a>
+      </nav>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Call or WhatsApp: <a href="tel:+27720000000">072 000 0000</a></p>
+        <p>Email: <a href="mailto:bookings@nmtravels.co.za">bookings@nmtravels.co.za</a></p>
+        <p>Office: Mon–Fri 07:00–17:00</p>
+      </div>
+    </div>
+    <small>© <span data-year>2026</span> NM Travels. Fictional student project — routes, prices and contact details are examples.</small>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

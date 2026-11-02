@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Group Charter &amp; Event Transport | NM Travels Polokwane</title>
+  <meta name="description" content="Request a quote for private 7- and 14-seater group transport from Polokwane for weddings, conferences, school trips, corporate events and airport transfers.">
+  <meta name="theme-color" content="#2b2b2b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NM Travels">
+  <meta property="og:title" content="Private Group Charter &amp; Event Transport | NM Travels">
+  <meta property="og:description" content="Private 7- and 14-seater group transport for weddings, conferences, school trips and corporate events.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="NM Travels home page">NM <span>Travels</span></a>
+      <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes &amp; Schedule</a>
+        <a href="booking.html">Book a Seat</a>
+        <a class="active" href="charter.html" aria-current="page">Private Charter</a>
+        <a href="fleet.html">Fleet</a>
+        <a href="about.html">About &amp; Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="banner">
+      <div class="container">
+        <p class="eyebrow">Group transport</p>
+        <h1>Private Group Charter</h1>
+        <p>Request a quote for events, teams, corporate travel and group transfers.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="charter-heading">
+      <div class="container two">
+        <form class="panel form" id="charterForm">
+          <h2 id="charter-heading" class="full form-title">Tell us about your group</h2>
+          <label>Contact person<input id="cname" name="contactPerson" autocomplete="name" required></label>
+          <label>Company / Organisation<input id="company" name="company" autocomplete="organization"></label>
+          <label>Email<input id="cemail" name="email" type="email" autocomplete="email" required></label>
+          <label>Phone<input id="cphone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[0-9+ ]{10,15}" title="Enter a phone number such as 072 000 0000" required></label>
+          <label>Group size<input id="group" name="groupSize" type="number" min="1" max="60" required></label>
+          <label>Event / travel date<input id="eventDate" name="eventDate" type="date" required></label>
+          <label>Route<input id="route" name="route" placeholder="Example: Polokwane to Johannesburg" required></label>
+          <label>Event type
+            <select id="eventType" name="eventType" required>
+              <option value="">Select</option>
+              <option>Corporate event</option>
+              <option>Wedding</option>
+              <option>School / team trip</option>
+              <option>Airport transfer</option>
+              <option>Conference</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <p id="vehicleSuggestion" class="fare full" aria-live="polite">Enter your group size and we'll suggest a vehicle combination.</p>
+          <label class="full">Additional requirements<textarea id="details" name="details" rows="5" maxlength="500" data-counter="detailsCount"></textarea></label>
+          <p id="detailsCount" class="char-count full">0 / 500 characters</p>
+          <button class="btn primary" type="submit">Send charter enquiry</button>
+          <p class="form-note full">Demo form: your details stay in your browser and are not sent or stored.</p>
+        </form>
+        <aside class="panel">
+          <picture>
+            <source srcset="images/nm-travels-14-seater-minibus.webp" type="image/webp">
+            <img class="photo panel-photo" src="images/nm-travels-14-seater-minibus.jpg" alt="White NM Travels 14-seater minibus parked under trees on a sunny day" width="640" height="767" decoding="async">
+          </picture>
+          <h2>Suitable for groups</h2>
+          <p>Vehicle planning is based on group size, route, timing and event requirements. Our 14-seater minibus and two 7-seaters can travel together for larger groups.</p>
+          <p><a class="text-link" href="fleet.html">See seating and luggage space for each vehicle</a></p>
+        </aside>
+      </div>
+      <div class="container">
+        <div id="charterResult" class="notice" aria-live="polite" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>NM Travels</strong>
+        <p>Airport transfers and intercity shuttles between Polokwane, Johannesburg and OR Tambo International Airport.</p>
+      </div>
+      <nav aria-label="Footer">
+        <p class="footer-title">Explore</p>
+        <a href="routes.html">Routes &amp; Schedule</a>
+        <a href="booking.html">Book a Seat</a>
+        <a href="charter.html">Private Charter</a>
+        <a href="fleet.html">Our Fleet</a>
+        <a href="about.html">About &amp; Contact</a>
+      </nav>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p>Call or WhatsApp: <a href="tel:+27720000000">072 000 0000</a></p>
+        <p>Email: <a href="mailto:bookings@nmtravels.co.za">bookings@nmtravels.co.za</a></p>
+        <p>Office: Mon–Fri 07:00–17:00</p>
+      </div>
+    </div>
+    <small>© <span data-year>2026</span> NM Travels. Fictional student project — routes, prices and contact details are examples.</small>
+  </footer>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

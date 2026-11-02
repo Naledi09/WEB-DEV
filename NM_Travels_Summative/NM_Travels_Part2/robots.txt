@@ -1,0 +1,7 @@
+# NM Travels – crawler instructions
+# All public pages may be crawled. robots.txt is public, so it never lists private content.
+User-agent: *
+Allow: /
+
+Sitemap: https://github.com/Naledi09/WEB-DEV
+NM_Travels_Part2/sitemap.xml
